@@ -5,8 +5,8 @@ import ohtu.verkkokauppa.Kirjanpito;
 import ohtu.verkkokauppa.Kirjanpito2;
 import ohtu.verkkokauppa.Pankki;
 import ohtu.verkkokauppa.Pankki2;
-import ohtu.verkkokauppa.Varasto2;
-import ohtu.verkkokauppa.Viitegeneraattori2;
+import ohtu.verkkokauppa.Varasto;
+import ohtu.verkkokauppa.Viitegeneraattori;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
@@ -19,9 +19,9 @@ public class Main {
         
         ApplicationContext ctx = new FileSystemXmlApplicationContext("src/main/resources/spring-context.xml");
         ///Kirjanpito kirjanpito = ctx.getBean(Kirjanpito.class);
-        Varasto2 varasto = ctx.getBean(Varasto2.class);
-        Pankki2 pankki = ctx.getBean(Pankki2.class);
-        Viitegeneraattori2 viitegeneraattori = ctx.getBean(Viitegeneraattori2.class);
+        Varasto varasto = ctx.getBean(Varasto.class);
+        Pankki pankki = ctx.getBean(Pankki.class);
+        Viitegeneraattori viitegeneraattori = ctx.getBean(Viitegeneraattori.class);
         Kauppa kauppa = ctx.getBean(Kauppa.class);
         
      //   Kirjanpito kirjanpito = new Kirjanpito();
